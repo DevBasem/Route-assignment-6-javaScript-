@@ -1,0 +1,263 @@
+/* |==========================| Common |==========================| */
+html {
+  scroll-behavior: auto !important;
+}
+/* ~~~~~~~~NavBar Toggle Button~~~~~~~~ */
+.navopen-btn {
+  background-color: rgba(214, 46, 51, 0.6);
+  backdrop-filter: blur(20px);
+  padding: 0.4rem;
+  border-radius: 0.4rem;
+  margin-left: 0.2rem;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 80%;
+  cursor: pointer;
+  transform: translateY(-50%);
+  transition: all 400ms ease-in-out;
+}
+
+.navopened {
+  left: max(25vw, 200px);
+  transition: all 400ms ease-in-out;
+}
+
+.navopen-btn i {
+  font-size: 1.1rem;
+  color: #fff;
+}
+
+.navopen-btn span {
+  font-size: 1.1rem;
+  color: #fff;
+}
+
+/* ~~~~~~~~BootStrap Override~~~~~~~~ */
+.btn:focus {
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+/* |==========================| Header |==========================| */
+#Navbar {
+  position: fixed;
+  z-index: 999;
+  background-color: #111;
+  width: max(25vw, 200px);
+  height: 100%;
+  display: none;
+}
+
+#Navbar .nav-links {
+  width: 100%;
+  height: 100%;
+}
+
+#Navbar .nav-links ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#Navbar .nav-links ul li {
+  padding-block-end: 2.5rem;
+  padding-inline: 1rem;
+}
+
+#Navbar .nav-links ul li a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #fff;
+  transition: color 400ms ease-in-out;
+}
+
+#Navbar .nav-links ul li a:hover {
+  color: #d62e33;
+}
+
+#Navbar .nav-links .navclose-btn {
+  display: flex;
+  justify-content: flex-end;
+  padding-block-start: 0.5rem;
+  padding-block-end: 0.5rem;
+  cursor: pointer;
+  width: fit-content;
+  margin-left: auto;
+}
+
+#Navbar .nav-links .navclose-btn i {
+  font-size: 1.5rem;
+  color: #fff;
+  padding: 0.8rem;
+}
+
+/* |==========================| Home |============================| */
+#Home {
+  height: 100vh;
+  background: url("../images/events-heavenly-header.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+#Home .overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(214, 46, 51, 0.6);
+  display: grid;
+  place-content: center;
+}
+
+#Home .overlay .home-text .title {
+  font-size: 4rem;
+}
+
+#Home .overlay .home-text p {
+  font-size: 1.5rem;
+}
+
+/* |==========================| Accordion |============================| */
+#Accordion {
+  padding-block: 5rem;
+}
+
+#Accordion .accordion-wrapper {
+  max-width: 35rem;
+  margin: auto;
+}
+
+#Accordion .accordion-wrapper .sector button {
+  background-color: rgba(214, 46, 51, 0.6);
+  width: 100%;
+  border-radius: 0;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#Accordion .accordion-wrapper .sector button:hover {
+  opacity: 90%;
+}
+
+#Accordion .accordion-wrapper .sector:first-child button:first-child {
+  border-top-right-radius: 0.4rem;
+  border-top-left-radius: 0.4rem;
+}
+
+#Accordion .accordion-wrapper .sector .content {
+  background-color: #ccc;
+  padding: 1rem;
+  display: none;
+}
+
+#Accordion .accordion-wrapper .sector:last-child button:first-child {
+  border-bottom-right-radius: 0.4rem;
+  border-bottom-left-radius: 0.4rem;
+}
+
+#Accordion .accordion-wrapper .sector:last-child .content:last-child {
+  border-bottom-right-radius: 0.4rem;
+  border-bottom-left-radius: 0.4rem;
+}
+
+/* |==========================| Counter |============================| */
+#Counter {
+  min-height: 15rem;
+  background: url("../images/invitation-2508607__340.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+#Counter .overlay {
+  width: 100%;
+  min-height: 15rem;
+  background-color: rgba(214, 46, 51, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-block: 1.5rem;
+}
+
+#Counter .overlay .counter-wrapper {
+  max-width: 80%;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  gap: 1rem;
+}
+
+#Counter .overlay .counter-wrapper div {
+  text-align: center;
+  height: 10rem;
+  border: 1px solid #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  display: grid;
+  place-content: center;
+}
+/* |==========================| Contact |============================| */
+#Contact {
+  padding-block: 5rem;
+}
+
+#Contact .form {
+  max-width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+#Contact .form .client-submit button {
+  background-color: #d62e33;
+  color: #fff;
+  border-radius: 0;
+  font-size: 1.1rem;
+  padding-inline: 1.2rem;
+}
+
+#charCount {
+  color: green;
+  display: none;
+}
+
+#myTextarea:focus + #charCount {
+  display: inline-block;
+}
+/* |==========================| Responsive Design |============================| */
+@media (max-width: 767px) {
+  /* |==========================| Home |=================================| */
+  #Home .overlay .home-text .title {
+    font-size: 3rem;
+  }
+
+  #Home .overlay .home-text p {
+    font-size: 1.4rem;
+  }
+  /* |==========================| Accordion |============================| */
+  #Accordion .accordion-wrapper {
+    max-width: 25rem;
+  }
+}
+
+@media (max-width: 576px) {
+  /* |==========================| Home |=================================| */
+  #Home .overlay .home-text .title {
+    font-size: 2.4rem;
+  }
+
+  #Home .overlay .home-text p {
+    font-size: 1.2rem;
+  }
+  /* |==========================| Accordion |============================| */
+  #Accordion .accordion-wrapper {
+    max-width: 20rem;
+  }
+}
+
+@media (max-width: 350px) {
+  /* |==========================| Accordion |============================| */
+  #Accordion .accordion-wrapper {
+    max-width: 15rem;
+  }
+}

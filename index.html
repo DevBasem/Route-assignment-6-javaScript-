@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- |==========================| Website Title |==========================| -->
+    <title>Assignment 6</title>
+    <!-- |==========================| BootStrap |==============================| -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- |==========================| FontAwesome |============================| -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- |==========================| Custom Css |=============================| -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- |==========================| NavBar Open Button |=====================| -->
+    <div class="navopen-btn" id="navOpen">
+      <i class="fa-solid fa-bars"></i>
+      <span>open</span>
+    </div>
+    <!-- |==========================| NavBar |=================================| -->
+    <header class="navbar" id="Navbar">
+      <div class="nav-links">
+        <div class="navclose-btn" id="navClose">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+        <ul>
+          <li><a href="#Home">Home</a></li>
+          <li><a href="#Accordion">Duration</a></li>
+          <li><a href="#Counter">Details</a></li>
+          <li><a href="#Contact">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+    <!-- |==========================| Home |===================================| -->
+    <section class="home" id="Home">
+      <div class="overlay">
+        <div class="home-text text-white text-center">
+          <h1 class="title">ُEgyption Party</h1>
+          <p>Let's have Fun</p>
+        </div>
+      </div>
+    </section>
+    <!-- |==========================| Accordion |==============================| -->
+    <section class="accordion" id="Accordion">
+      <div class="accordion-wrapper">
+        <div class="sector">
+          <button class="btn accordionBtn">Section 1</button>
+          <div class="content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum neque natus repellendus et sed eligendi fuga quis distinctio, aut enim! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa voluptatum quisquam, nobis impedit
+            sapiente eius ipsum numquam fugiat incidunt adipisci obcaecati iusto sit alias odio! Laudantium consequatur incidunt magnam rerum!
+          </div>
+        </div>
+
+        <div class="sector">
+          <button class="btn accordionBtn">Section 2</button>
+          <div class="content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum neque natus repellendus et sed eligendi fuga quis distinctio, aut enim! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa voluptatum quisquam, nobis impedit
+            sapiente eius ipsum numquam fugiat incidunt adipisci obcaecati iusto sit alias odio! Laudantium consequatur incidunt magnam rerum!
+          </div>
+        </div>
+
+        <div class="sector">
+          <button class="btn accordionBtn">Section 3</button>
+          <div class="content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum neque natus repellendus et sed eligendi fuga quis distinctio, aut enim! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa voluptatum quisquam, nobis impedit
+            sapiente eius ipsum numquam fugiat incidunt adipisci obcaecati iusto sit alias odio! Laudantium consequatur incidunt magnam rerum!
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- |==========================| Counter |================================| -->
+    <section class="counter" id="Counter">
+      <div class="overlay">
+        <div class="counter-wrapper">
+          <div class="days"></div>
+          <div class="hours"></div>
+          <div class="minutes"></div>
+          <div class="seconds"></div>
+        </div>
+      </div>
+    </section>
+    <!-- |==========================| Contact |================================| -->
+    <section class="contact" id="Contact">
+      <div class="container">
+        <div class="section-title text-center pb-3">
+          <h2>Contact Us</h2>
+        </div>
+        <form action="#" class="form">
+          <div class="user-input form-floating mb-3">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" />
+            <label for="floatingInput">Email address</label>
+          </div>
+          <div class="user-input form-floating mb-3">
+            <input type="password" class="form-control" id="floatingPassword" placeholder="Password" />
+            <label for="floatingPassword">Password</label>
+          </div>
+          <div class="user-input">
+            <textarea class="form-control mb-3" id="myTextarea" rows="8" placeholder="Enter Message" maxlength="100"></textarea>
+            <div class="client-msg mb-3" id="charCount"></div>
+          </div>
+          <div class="client-submit">
+            <button class="btn">Send Message</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- |==========================| jQuery Js |==============================| -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <!-- |==========================| Bootstrap Js |===========================| -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- |==========================| Custom Js |==============================| -->
+    <script src="js/index.js"></script>
+  </body>
+</html>
